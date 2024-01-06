@@ -6,12 +6,12 @@ import Utils.PrintArray;
 
 import java.util.Scanner;
 
-public class Logic01Soal01 {
+public class Logic01Soal10 {
     public static void main(String[] args) {
 
         int n = InputData.input(new Scanner(System.in));
 
-        int[] array = DeretAngka.bilanganAsli(n);
+        int[] array = DeretAngka.pangkat(n,3);
 
         PrintArray.printArray(array);
     }
