@@ -67,17 +67,18 @@ public class PrintArray {
         }
     }
 
-    public static void printSpasi(int[][] array){
+    public static void printArray0 (int[][] array){
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 if (array[i][j] == 0){
-                    System.out.print("\t");
+                    System.out.print(0 + "\t");
                     continue;
                 }
-                System.out.print(array[i][j]);
+                System.out.print(array[i][j] + "\t");
 
             }
+            System.out.println();
         }
-        System.out.println("\n");
+
     }
 }
