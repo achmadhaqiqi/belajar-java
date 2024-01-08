@@ -139,9 +139,17 @@ public class DeretAngka {
 
         }
         return kaliTiga;
+
+
     }
+    public static int[] genapTerbalik(int n) {
+        int[] genapTerbalik = new int[n];
+        for (int i = 0; i < n; i++) {
+            genapTerbalik[i] = 2 * (n - (i +1) );
+        }
+        return genapTerbalik;
 
-
+    }
 }
 
 
