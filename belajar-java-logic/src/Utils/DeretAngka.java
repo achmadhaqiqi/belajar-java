@@ -150,6 +150,15 @@ public class DeretAngka {
         return genapTerbalik;
 
     }
+
+    public static int[] asliTerbalik(int n) {
+        int[] asliTerbalik = new int[n];
+        for (int i = 0; i < n; i++) {
+            asliTerbalik[i] = (i + 1) * n;
+
+        }
+        return asliTerbalik;
+    }
 }
 
 
