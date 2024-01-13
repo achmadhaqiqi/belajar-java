@@ -159,6 +159,18 @@ public class DeretAngka {
         }
         return asliTerbalik;
     }
+
+    public static int[] ganjilPrefix(int n, int position, int prefix){
+        int[] array = new int[n];
+        for (int i = 0; i < n; i++){
+            if (i % position == position - 1) {
+                array[i] = prefix;
+            } else {
+                array[i] = (i * 2) + 1;
+            }
+        }
+        return array;
+    }
 }
 
 
