@@ -171,6 +171,22 @@ public class DeretAngka {
         }
         return array;
     }
+
+    public static int[] asliModif(int n, int position, int prefix){
+        int[] array = new int[n];
+        int angka = 1;
+        for (int i = 0; i <n; i++) {
+            if (i%position == position-1){
+                array[i] = prefix;
+            } else {
+                array[i] = angka;
+            }
+            angka++;
+
+        }
+        return array;
+    }
+
 }
 
 
