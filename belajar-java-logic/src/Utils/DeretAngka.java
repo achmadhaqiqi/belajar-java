@@ -104,24 +104,22 @@ public class DeretAngka {
 
     }
 
-    public static int[] hurufDanAngka(int n){
-        int[] array = new int[n];
-        int angka = 1;
+    public static String[] hurufDanAngka(int n){
+        String[] array = new String[n];
+        int angka = 2;
         char huruf = 'A';
-
         for (int i = 0; i < n; i++) {
-            if (i % 2 == 1){
-                array[i] = angka;
-                angka += 2;
-            } if (i % 2 == 0){
-                array[i] = huruf;
-                huruf += 2;
-            } if (i == 0){
-                array[i] = huruf;
+            if (i % 2 == 0) {
+                array[i] = String.valueOf(huruf);
+                huruf+=2;
+            } else {
+                array[i] = String.valueOf(angka);
+                angka+=2;
             }
 
         }
         return array;
+
 
 
 
@@ -186,7 +184,7 @@ public class DeretAngka {
         }
         return array;
     }
-
+    
 }
 
 
