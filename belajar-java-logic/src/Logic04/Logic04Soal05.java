@@ -18,9 +18,9 @@ public class Logic04Soal05 {
 
         for (int i = 0; i < n; i++) {
             int indexKolom = 0;
+
             for (int j = 0; j < n; j++) {
                 char huruf = (char)('A' + j);
-
             if (i + j <= n-1 && i >= j && j < nTengah){
                 System.out.print(huruf + "\t" );
             } else if (i + j >= n-1 && i <= j) {
