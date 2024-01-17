@@ -13,10 +13,15 @@ public class Logic02Soal02b {
 
         int[][] array = new int[n][n];
         int[] asli = DeretAngka.bilanganAsli(n);
+        int indexTengah = n/2;
 
         for (int i = 0; i < n; i++) {
-        //    array[i][i] = asli[i];
-            array[n-1-i][n-1-i] = asli[i];
+           array[i][i] = asli[indexTengah];
+           array[n-1-i][i] = asli[indexTengah];
+           array[0][i] = asli[indexTengah];
+           array[i][0] = asli[indexTengah];
+           array[n-1-i][n-1] = asli[indexTengah];
+           array[n-1][n-1-i] = asli[indexTengah];
 
 
         }
