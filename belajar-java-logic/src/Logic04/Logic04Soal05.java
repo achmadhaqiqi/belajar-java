@@ -12,28 +12,27 @@ public class Logic04Soal05 {
         int n = InputData.input(new Scanner(System.in));
 
         int[] fibo = DeretAngka.fibo(n,3);
+        char[] huruf = DeretAngka.huruf(n);
 
-        int[][] array = new int[n][n];
+        String[][] array = new String[n][n];
         int nTengah = n/2;
 
         for (int i = 0; i < n; i++) {
             int indexKolom = 0;
 
             for (int j = 0; j < n; j++) {
-                char huruf = (char)('A' + j);
+
             if (i + j <= n-1 && i >= j && j < nTengah){
-                System.out.print(huruf + "\t" );
+                array[i][j] = String.valueOf(huruf[j]);
             } else if (i + j >= n-1 && i <= j) {
-                System.out.print(fibo[indexKolom] + "\t");
-            } else {
-                System.out.print("\t");
+                array[i][j] = String.valueOf(fibo[j]);
             }
             indexKolom++;
 
         }
-            System.out.println();
 
         }
+        PrintArray.printArray(array);
 
     }
 }

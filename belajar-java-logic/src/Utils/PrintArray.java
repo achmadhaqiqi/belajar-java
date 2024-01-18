@@ -48,7 +48,7 @@ public class PrintArray {
                 System.out.print(array[i][j] + "\t");
             }
             // pindah baris
-            System.out.println("\n");
+            System.out.println();
         }
     }
 

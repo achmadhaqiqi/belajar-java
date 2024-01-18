@@ -5,7 +5,7 @@ public class HeroApp {
         hero1.damage = "Physical";
         hero1.role = "Jungler";
 
-        System.out.println(hero1.name);
+        System.out.println(hero1);
         System.out.println(hero1.damage);
         System.out.println(hero1.role);
 
